@@ -1,0 +1,31 @@
+{
+  "properties": {
+    "business_id": {
+      "type": "string"
+    },
+    "business_name": {
+      "type": "string"
+    },
+    "previous_classification": {
+      "type": "string"
+    },
+    "new_classification": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "string"
+    },
+    "user_name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "business_id",
+    "new_classification"
+  ],
+  "name": "VerificationOverride",
+  "type": "object"
+}

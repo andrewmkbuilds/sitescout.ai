@@ -1,0 +1,58 @@
+{
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "business_type": {
+      "type": "string"
+    },
+    "message_type": {
+      "type": "string"
+    },
+    "tone": {
+      "type": "string"
+    },
+    "subject_template": {
+      "type": "string"
+    },
+    "body_template": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "channel": {
+      "type": "string"
+    },
+    "situation": {
+      "type": "string"
+    },
+    "suitable_business_types": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "required_evidence": {
+      "type": "string"
+    },
+    "recommended_cta": {
+      "type": "string"
+    },
+    "usage_note": {
+      "type": "string"
+    },
+    "is_fallback": {
+      "type": "boolean"
+    },
+    "is_builtin": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "name",
+    "body_template"
+  ],
+  "name": "PitchTemplate",
+  "type": "object"
+}

@@ -1,0 +1,19 @@
+{
+  "properties": {
+    "metric": {
+      "type": "string"
+    },
+    "period": {
+      "type": "string"
+    },
+    "count": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "metric",
+    "period"
+  ],
+  "name": "UsageRecord",
+  "type": "object"
+}

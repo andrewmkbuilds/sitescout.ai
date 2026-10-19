@@ -1,0 +1,30 @@
+{
+  "properties": {
+    "business_id": {
+      "type": "string"
+    },
+    "lead_id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "due_date": {
+      "type": "string"
+    },
+    "completed": {
+      "type": "boolean"
+    },
+    "assigned_to": {
+      "type": "string"
+    },
+    "is_demo": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "title"
+  ],
+  "name": "FollowUpTask",
+  "type": "object"
+}

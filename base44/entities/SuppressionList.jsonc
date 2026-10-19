@@ -1,0 +1,15 @@
+{
+  "properties": {
+    "email": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "email"
+  ],
+  "name": "SuppressionList",
+  "type": "object"
+}

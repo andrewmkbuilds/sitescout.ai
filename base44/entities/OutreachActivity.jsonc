@@ -1,0 +1,57 @@
+{
+  "properties": {
+    "business_id": {
+      "type": "string"
+    },
+    "lead_id": {
+      "type": "string"
+    },
+    "business_name": {
+      "type": "string"
+    },
+    "channel": {
+      "type": "string",
+      "enum": [
+        "email",
+        "linkedin",
+        "phone",
+        "other"
+      ]
+    },
+    "direction": {
+      "type": "string",
+      "enum": [
+        "outbound",
+        "inbound"
+      ]
+    },
+    "subject": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "sent",
+        "delivered",
+        "replied",
+        "bounced",
+        "failed",
+        "logged"
+      ]
+    },
+    "sent_at": {
+      "type": "string"
+    },
+    "is_demo": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "business_name"
+  ],
+  "name": "OutreachActivity",
+  "type": "object"
+}

@@ -1,0 +1,152 @@
+{
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "website_url": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "opening_hours": {
+      "type": "string"
+    },
+    "listing_url": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "string"
+    },
+    "provider_id": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number"
+    },
+    "review_count": {
+      "type": "number"
+    },
+    "website_status": {
+      "type": "string",
+      "enum": [
+        "no_website_listed",
+        "unverified",
+        "reachable",
+        "redirecting",
+        "inaccessible",
+        "error",
+        "blocked",
+        "audit_incomplete"
+      ]
+    },
+    "website_quality_score": {
+      "type": "number"
+    },
+    "opportunity_score": {
+      "type": "number"
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "prospect_scores": {
+      "type": "object"
+    },
+    "suggested_services": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "lead_status": {
+      "type": "string"
+    },
+    "assigned_to": {
+      "type": "string"
+    },
+    "deal_value": {
+      "type": "number"
+    },
+    "next_follow_up": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "last_verified": {
+      "type": "string"
+    },
+    "is_demo": {
+      "type": "boolean"
+    },
+    "research_job_id": {
+      "type": "string"
+    },
+    "website_classification": {
+      "type": "string",
+      "enum": [
+        "verified_no_website",
+        "website_found",
+        "needs_checking",
+        "broken_inaccessible",
+        "needs_improvement"
+      ]
+    },
+    "confirmed_website_url": {
+      "type": "string"
+    },
+    "verification_confidence": {
+      "type": "number"
+    },
+    "checks_completed": {
+      "type": "number"
+    },
+    "verification_checks": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "candidate_domains": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "source_coverage": {
+      "type": "object"
+    },
+    "manual_overrides": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "required": [
+    "name"
+  ],
+  "name": "Business",
+  "type": "object"
+}

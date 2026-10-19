@@ -1,0 +1,21 @@
+{
+  "properties": {
+    "action": {
+      "type": "string"
+    },
+    "entity": {
+      "type": "string"
+    },
+    "entity_id": {
+      "type": "string"
+    },
+    "details": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "action"
+  ],
+  "name": "AuditLog",
+  "type": "object"
+}

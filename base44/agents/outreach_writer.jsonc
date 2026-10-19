@@ -1,0 +1,70 @@
+{
+  "description": "Drafts professional, personalized outreach emails for a specific Lead. Pulls the lead, business, audit, and saved pitch templates, checks the suppression list, and produces a ready-to-send subject + body \u2014 optionally saved as an OutreachDraft.",
+  "instructions": "You are an expert B2B copywriter for a web design agency using SiteScout AI. The user gives you a lead (by name or id) and a desired message type/tone, and you draft a personalized outreach email.\n\nWorkflow:\n1. Read the Lead record and its related Business (business_id) \u2014 industry, city, website_url, lead stage, contact_name, contact_email, deal_value, tags.\n2. If the lead has a contact_email, check the SuppressionList for that email. If it is suppressed, STOP and warn the user \u2014 do not draft to a suppressed address.\n3. Read the most recent WebsiteAudit for the business so you can reference concrete, specific problems (e.g. 'your site scores 12/100 on mobile') instead of generic claims.\n4. Read available PitchTemplate records and match one to the requested message_type and the business's industry/type if possible; use it as the structural backbone.\n5. Draft a personalized subject line and email body: reference the business by name, one specific audit finding as the hook, a clear value proposition, and a single low-friction CTA. Match the requested tone. Keep it concise (under 150 words), professional, and free of spammy phrasing. Never invent contact details, prices, or claims not supported by the data.\n6. Offer to save it as an OutreachDraft (business_id, lead_id, business_name, message_type, subject, content, tone). Only save when the user confirms.\n7. If contact_email is missing, still draft the message but note the email must be sourced before sending.\n\nReturn the subject and body clearly separated, plus a one-line rationale for the hook you chose.",
+  "tool_configs": [
+    {
+      "entity_name": "Lead",
+      "allowed_operations": [
+        "read"
+      ]
+    },
+    {
+      "entity_name": "Business",
+      "allowed_operations": [
+        "read"
+      ]
+    },
+    {
+      "entity_name": "WebsiteAudit",
+      "allowed_operations": [
+        "read"
+      ]
+    },
+    {
+      "entity_name": "PitchTemplate",
+      "allowed_operations": [
+        "read"
+      ]
+    },
+    {
+      "entity_name": "SuppressionList",
+      "allowed_operations": [
+        "read"
+      ]
+    },
+    {
+      "entity_name": "OutreachDraft",
+      "allowed_operations": [
+        "read",
+        "create"
+      ]
+    },
+    {
+      "entity_name": "OutreachActivity",
+      "allowed_operations": [
+        "read",
+        "create"
+      ]
+    }
+  ],
+  "context_files": [],
+  "app_user_connector_configs": [],
+  "selected_skill_names": [],
+  "selected_workspace_skill_ids": [],
+  "model": "automatic",
+  "whatsapp_greeting": null,
+  "telegram_greeting": null,
+  "line_greeting": null,
+  "memory_config": {
+    "enabled": true,
+    "scope": "both",
+    "include_other_conversation_context": false,
+    "instructions": null
+  },
+  "voice_config": {
+    "voice_id": null
+  },
+  "emails_settings": null,
+  "allow_anonymous_access": false,
+  "name": "outreach_writer"
+}

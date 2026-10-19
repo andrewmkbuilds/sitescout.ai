@@ -1,0 +1,42 @@
+{
+  "properties": {
+    "business_id": {
+      "type": "string"
+    },
+    "business_name": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "style": {
+      "type": "string"
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "hero": {
+      "type": "string"
+    },
+    "cta": {
+      "type": "string"
+    },
+    "structure": {
+      "type": "object"
+    },
+    "preview_html": {
+      "type": "string"
+    },
+    "is_demo": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "business_name"
+  ],
+  "name": "WebsiteConcept",
+  "type": "object"
+}

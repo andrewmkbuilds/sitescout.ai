@@ -1,0 +1,43 @@
+{
+  "properties": {
+    "business_id": {
+      "type": "string"
+    },
+    "lead_id": {
+      "type": "string"
+    },
+    "business_name": {
+      "type": "string"
+    },
+    "message_type": {
+      "type": "string",
+      "enum": [
+        "first_contact",
+        "enquiry",
+        "follow_up",
+        "linkedin",
+        "proposal",
+        "audit_summary",
+        "meeting_request",
+        "improvement_pitch"
+      ]
+    },
+    "subject": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "tone": {
+      "type": "string"
+    },
+    "is_demo": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "content"
+  ],
+  "name": "OutreachDraft",
+  "type": "object"
+}

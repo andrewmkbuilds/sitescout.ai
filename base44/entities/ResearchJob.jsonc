@@ -1,0 +1,66 @@
+{
+  "properties": {
+    "query": {
+      "type": "object"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "running",
+        "paused",
+        "completed",
+        "failed"
+      ]
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "max_records": {
+      "type": "number"
+    },
+    "verification_depth": {
+      "type": "string"
+    },
+    "min_confidence": {
+      "type": "number"
+    },
+    "include_needs_improvement": {
+      "type": "boolean"
+    },
+    "include_unresolved": {
+      "type": "boolean"
+    },
+    "counts": {
+      "type": "object"
+    },
+    "source_usage": {
+      "type": "object"
+    },
+    "business_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "demo_mode": {
+      "type": "boolean"
+    },
+    "error": {
+      "type": "string"
+    },
+    "started_at": {
+      "type": "string"
+    },
+    "finished_at": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "status"
+  ],
+  "name": "ResearchJob",
+  "type": "object"
+}

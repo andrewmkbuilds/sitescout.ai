@@ -1,0 +1,78 @@
+{
+  "properties": {
+    "business_id": {
+      "type": "string"
+    },
+    "business_name": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "website_url": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "new",
+        "to_review",
+        "qualified",
+        "contacted",
+        "replied",
+        "meeting_scheduled",
+        "proposal_sent",
+        "won",
+        "lost",
+        "do_not_contact"
+      ]
+    },
+    "contact_name": {
+      "type": "string"
+    },
+    "contact_email": {
+      "type": "string"
+    },
+    "contact_phone": {
+      "type": "string"
+    },
+    "deal_value": {
+      "type": "number"
+    },
+    "lead_source": {
+      "type": "string"
+    },
+    "assigned_to": {
+      "type": "string"
+    },
+    "next_follow_up": {
+      "type": "string"
+    },
+    "due_date": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contact_status": {
+      "type": "string"
+    },
+    "archived": {
+      "type": "boolean"
+    },
+    "is_demo": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "business_name"
+  ],
+  "name": "Lead",
+  "type": "object"
+}

@@ -1,0 +1,43 @@
+{
+  "properties": {
+    "provider": {
+      "type": "string",
+      "enum": [
+        "google_places",
+        "pagespeed",
+        "ai_provider",
+        "email_provider",
+        "billing",
+        "csv",
+        "crm",
+        "web_search",
+        "instagram",
+        "x_social",
+        "directory"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "disconnected",
+        "connected",
+        "error",
+        "setup_required"
+      ]
+    },
+    "config": {
+      "type": "object"
+    },
+    "last_sync": {
+      "type": "string"
+    },
+    "error_detail": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "provider"
+  ],
+  "name": "IntegrationSetting",
+  "type": "object"
+}

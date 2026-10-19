@@ -1,0 +1,60 @@
+{
+  "properties": {
+    "business_id": {
+      "type": "string"
+    },
+    "business_name": {
+      "type": "string"
+    },
+    "website_url": {
+      "type": "string"
+    },
+    "overall_score": {
+      "type": "number"
+    },
+    "performance_score": {
+      "type": "number"
+    },
+    "mobile_score": {
+      "type": "number"
+    },
+    "seo_score": {
+      "type": "number"
+    },
+    "security_score": {
+      "type": "number"
+    },
+    "conversion_score": {
+      "type": "number"
+    },
+    "accessibility_score": {
+      "type": "number"
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "suggested_services": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "audit_source": {
+      "type": "string"
+    },
+    "audit_timestamp": {
+      "type": "string"
+    },
+    "is_demo": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "website_url"
+  ],
+  "name": "WebsiteAudit",
+  "type": "object"
+}
